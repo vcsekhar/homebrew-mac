@@ -1,5 +1,6 @@
 cask "maccam" do
   arch arm: "arm64"
+  depends_on :macos
 
   version "1.0.0"
   
