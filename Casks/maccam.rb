@@ -14,10 +14,10 @@ cask "maccam" do
 
   stage_only true
 
-  postflight_steps do
+  postflight_steps do |cask|
     # This targets the app inside the extracted directory and moves it to /Applications
     system_command "/usr/bin/ditto",
-                   args: ["#{staged_path}/maccam/maccam.app", "/Applications/maccam.app"],
+                   args: ["#{cask.staged_path}/maccam/maccam.app", "/Applications/maccam.app"],
                    sudo: false
   end
   
