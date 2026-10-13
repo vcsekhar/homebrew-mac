@@ -24,4 +24,12 @@ cask "maccam" do
   uninstall quit:   "com.milan.Camera", # osascript -e 'id of app "MacCam.app"'
             delete: "/Applications/maccam.app"
 
+zap trash: [
+    "~/Library/Caches/com.milan.Camera",
+    "~/Library/HTTPStorages/com.milan.Camera",
+    "~/Library/Preferences/com.milan.Camera.plist",
+    "~/Library/Application Support/com.milan.Camera",
+    "~/Library/Application Support/MacCam"
+  ]
+
 end
