@@ -2,7 +2,7 @@ cask "maccam" do
   arch arm: "arm64"
   depends_on :macos
 
-  version "1.0.0"
+  version "1.0.17"
   
   sha256 arm: "e79bd78501aef0e39032b1765f8eb7ec50df0141603f6460a849d8872840e77f" # shasum -a 256 MacCam.zip
   
