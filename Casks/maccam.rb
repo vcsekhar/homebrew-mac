@@ -12,12 +12,12 @@ cask "maccam" do
   desc "MacCam - The camera app for Mac"
   homepage "https://www.maccam.app"
 
-  container nested: "maccam.app"
-
+  
   livecheck do
     url :url
     strategy :github_latest
   end
+
   app "maccam.app" 
 
   uninstall quit:   "com.milan.Camera", # Replace with your app's bundle ID if known
