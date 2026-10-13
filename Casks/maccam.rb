@@ -11,7 +11,7 @@ cask "maccam" do
   desc "MacCam - The camera app for Mac"
   homepage "https://www.maccam.app"
 
-  container nested: "maccam.dmg"
+  container nested: "maccam.app"
   
   app "maccam.app" 
 end
