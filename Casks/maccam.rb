@@ -12,15 +12,12 @@ cask "maccam" do
   desc "MacCam - The camera app for Mac"
   homepage "https://www.maccam.app"
 
-  stage_only true
+  container nested: "maccam.app"
 
-  postflight_steps do |cask|
-    # This targets the app inside the extracted directory and moves it to /Applications
-    system_command "/usr/bin/ditto",
-                   args: ["#{cask.staged_path}/maccam/maccam.app", "/Applications/maccam.app"],
-                   sudo: false
+  livecheck do
+    url :url
+    strategy :github_latest
   end
-  
   app "maccam.app" 
 
   uninstall quit:   "com.milan.Camera", # Replace with your app's bundle ID if known
