@@ -2,9 +2,9 @@ cask "maccam" do
   arch arm: "arm64"
   depends_on :macos
 
-  version "1.0.17"
+  version "1.0.18"
   
-  sha256 arm: "e79bd78501aef0e39032b1765f8eb7ec50df0141603f6460a849d8872840e77f" # shasum -a 256 MacCam.zip
+  sha256 arm: "adae13fd35e31f80702cada67293113af0f8b7074326779053486efc2cda3992" # shasum -a 256 MacCam.zip
   
   # Assumption: the below URL holds good for all potential versions/revisions of this app
   url "https://github.com/milanrunscode/MacCam/releases/latest/download/MacCam.zip" 
